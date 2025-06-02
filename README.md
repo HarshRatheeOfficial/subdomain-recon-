@@ -1,8 +1,6 @@
 # subdomain-recon-
 **Web subdomain reconnaissance** (or *subdomain recon*) is the process of identifying subdomains associated with a target domain. It's a crucial step in penetration testing, bug bounty hunting, or general cybersecurity reconnaissance, as subdomains can expose development environments, internal tools, or forgotten services.
 
-Here’s a practical breakdown of how to perform subdomain reconnaissance:
-
 ---
 
 ### **1. Passive Enumeration (Stealthy, No Direct Interaction)**
@@ -95,10 +93,6 @@ Not all found subdomains are live. Tools like:
 
 ---
 
-If you want to perform **subdomain reconnaissance with status code checking** (to see which subdomains are live and what their HTTP response status is), you can combine tools like `subfinder` (for subdomain discovery) and `httpx` (for checking HTTP status codes).
-
----
-
 ###  **One-Liner for Subdomain Recon + Status Codes**
 
 Here’s a powerful command-line one-liner using `subfinder` and `httpx`:
@@ -144,7 +138,7 @@ Make sure `GOPATH` is in your system `$PATH` so you can run them directly.
   ```bash
   subfinder -d example.com -silent | httpx -status-code -title -silent -o live_subdomains.txt
   ```
-Great! Here's a **Bash script** that performs subdomain reconnaissance with `subfinder` and `httpx`, checks HTTP response status codes, page titles, and saves everything to a timestamped output file.
+ checks HTTP response status codes, page titles, and saves everything to a timestamped output file.
 
 ---
 
