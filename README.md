@@ -78,7 +78,7 @@ These methods interact with the target or use brute-forcing.
 
 ---
 
-### **4. Validate and Resolve Subdomains**
+###  **4. Validate and Resolve Subdomains**
 
 Not all found subdomains are live. Tools like:
 
@@ -99,7 +99,7 @@ If you want to perform **subdomain reconnaissance with status code checking** (t
 
 ---
 
-### **One-Liner for Subdomain Recon + Status Codes**
+###  **One-Liner for Subdomain Recon + Status Codes**
 
 Here’s a powerful command-line one-liner using `subfinder` and `httpx`:
 
@@ -117,7 +117,7 @@ https://api.example.com [301] [Moved Permanently]
 
 ---
 
-### 🔧 **Installation (if needed)**
+###  **Installation (if needed)**
 
 #### Install `subfinder`:
 
