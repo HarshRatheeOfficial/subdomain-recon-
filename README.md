@@ -83,7 +83,7 @@ Not all found subdomains are live. Tools like:
 * `httpx` – Check if subdomains are alive (HTTP/S):
 
   ```bash
-  cat subdomains.txt | httpx -silent
+  cat subdomains.txt | httpx-toolkit -silent
   ```
 * `dnsx` – Validate DNS resolution:
 
@@ -95,10 +95,10 @@ Not all found subdomains are live. Tools like:
 
 ###  **One-Liner for Subdomain Recon + Status Codes**
 
-Here’s a powerful command-line one-liner using `subfinder` and `httpx`:
+Here’s a powerful command-line one-liner using `subfinder` and `httpx-toolkit`:
 
 ```bash
-subfinder -d example.com -silent | httpx -status-code -title -silent
+subfinder -d example.com -silent | httpx-tookit -status-code -title -silent
 ```
 
 ####  Output Example:
@@ -136,7 +136,7 @@ Make sure `GOPATH` is in your system `$PATH` so you can run them directly.
 * Output to a file:
 
   ```bash
-  subfinder -d example.com -silent | httpx -status-code -title -silent -o live_subdomains.txt
+  subfinder -d example.com -silent | httpx-toolkit -status-code -title -silent -o live_subdomains.txt
   ```
  checks HTTP response status codes, page titles, and saves everything to a timestamped output file.
 
