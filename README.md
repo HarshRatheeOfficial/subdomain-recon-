@@ -54,7 +54,7 @@ These methods interact with the target or use brute-forcing.
 * **dnsx** (from ProjectDiscovery)
 
   ```bash
-  subfinder -d example.com | dnsx -silent
+  subfinder -d example.com | dnsx --silent
   ```
 * **MassDNS + Wordlist**
 
@@ -83,7 +83,7 @@ Not all found subdomains are live. Tools like:
 * `httpx` – Check if subdomains are alive (HTTP/S):
 
   ```bash
-  cat subdomains.txt | httpx-toolkit -silent
+  cat subdomains.txt | httpx-toolkit --silent
   ```
 * `dnsx` – Validate DNS resolution:
 
